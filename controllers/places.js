@@ -5,6 +5,11 @@ app.get('/', (req, res) => {
     let places = [ ]
     res.render('places/index')
   })
+
+  router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+  
   
   let places = [{
     name: 'Burger-King',
@@ -13,6 +18,7 @@ app.get('/', (req, res) => {
     cuisines: 'Burgers, American Food',
     pic: '/images/bacon-cheeseburger.jpg'
   }, {
+      
     name: 'Outback-Steakhouse',
     city: 'Takoma Park',
     state: 'MD',

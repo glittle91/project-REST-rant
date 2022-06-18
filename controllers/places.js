@@ -6,8 +6,14 @@ app.get('/', (req, res) => {
     res.render('places/index')
   })
 
-  router.get('/new', (req, res) => {
+    router.get('/new', (req, res) => {
     res.render('places/new')
+
+    router.post('/', (req, res) => {
+        console.log(req.body)
+        res.send('POST /places')
+      })
+      
   })
   
   
@@ -18,7 +24,7 @@ app.get('/', (req, res) => {
     cuisines: 'Burgers, American Food',
     pic: '/images/bacon-cheeseburger.jpg'
   }, {
-      
+
     name: 'Outback-Steakhouse',
     city: 'Takoma Park',
     state: 'MD',

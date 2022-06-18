@@ -1,3 +1,6 @@
+const Def = require('../default')
+const React = require('react')
+
 function index (data) {
     let placesFormatted = data.places.map((place) => {
         return (
@@ -13,6 +16,7 @@ function index (data) {
           </div>
         )
       })
+    
       
     return (
       <Def>
@@ -26,5 +30,5 @@ function index (data) {
     )
   }
   
-  
+module.exports = index
   

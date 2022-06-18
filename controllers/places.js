@@ -7,17 +7,17 @@ app.get('/', (req, res) => {
   })
   
   let places = [{
-    name: 'Burger King',
+    name: 'Burger-King',
     city: 'Washington',
     state: 'DC',
     cuisines: 'Burgers, American Food',
-    pic: 'https://bit.ly/39H4AB0'
+    pic: '/images/bacon-cheeseburger.jpg'
   }, {
-    name: 'Outback Steakhouse',
+    name: 'Outback-Steakhouse',
     city: 'Takoma Park',
     state: 'MD',
     cuisines: 'Steak, Burgers',
-    pic: 'https://bit.ly/3OmPTSr'
+    pic: '/images/steak.jpg'
   }]
   
   res.render('places/index', { places })
